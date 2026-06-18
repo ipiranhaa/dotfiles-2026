@@ -9,11 +9,15 @@ A modular and clean setup to manage your macOS system settings, shell configurat
 ├── Brewfile                # Homebrew packages, casks, and Mac App Store apps
 ├── macos.sh                # Script to configure macOS defaults
 ├── README.md               # Documentation
+├── ghostty/
+│   └── config              # Ghostty terminal emulator configuration
 ├── git/
 │   ├── .gitconfig          # Git configuration
 │   └── .gitignore_global   # Global Git ignore rules
+├── starship/
+│   └── starship.toml       # Starship shell prompt configuration
 └── zsh/
-    └── .zshrc              # Shell configurations
+    └── .zshrc              # Shell configurations (Oh My Zsh, Starship & plugins)
 ```
 
 ## Setup / Installation
@@ -35,10 +39,11 @@ A modular and clean setup to manage your macOS system settings, shell configurat
    ```
 
 ### What `bootstrap.sh` does:
-1. **Creates Symlinks**: Backs up any existing `.zshrc`, `.gitconfig`, or `.gitignore_global` files (renaming them to `*.bak`) and creates symlinks pointing to this folder.
+1. **Creates Symlinks**: Backs up any existing configurations (e.g. `.zshrc`, `.gitconfig`, `.gitignore_global`, `starship.toml`, and ghostty `config`) by renaming them to `*.bak` and creates symlinks pointing to this folder.
 2. **Installs Homebrew**: Installs Homebrew if it is missing.
-3. **Installs Packages**: Runs `brew bundle` to install CLI tools and apps listed in `Brewfile`.
-4. **Applies macOS Preferences**: Prompts you to run `macos.sh` which applies typical power-user macOS system settings (Dock preferences, fast key repeat, Finder tweaks, etc.).
+3. **Installs Packages**: Runs `brew bundle` to install CLI tools (like Starship) and applications (like Ghostty & FiraCode Nerd Font) listed in the `Brewfile`.
+4. **Installs Oh My Zsh & Plugins**: Installs Oh My Zsh (if missing) and clones custom plugins (`zsh-autosuggestions` and `zsh-syntax-highlighting`).
+5. **Applies macOS Preferences**: Prompts you to run `macos.sh` which applies typical power-user macOS system settings (Dock preferences, fast key repeat, Finder tweaks, etc.).
 
 ---
 
