@@ -1,0 +1,24 @@
+# Ghostty Configuration
+# Symlinked to ~/.config/ghostty/config
+
+# Font config (uses Nerd Font)
+font-family = "FiraCode Nerd Font"
+font-size = 13
+
+# Window Aesthetics
+window-padding-x = 12
+window-padding-y = 12
+window-background-opacity = 0.92
+window-background-blur = true
+
+# Theme (Premium Sleek Dark Mode)
+theme = "catppuccin-macchiato"
+
+# Cursor Configuration
+cursor-style = "block"
+cursor-blink = true
+adjust-cursor-thickness = 2
+
+# Clipboard
+clipboard-read = "allow"
+clipboard-write = "allow"
