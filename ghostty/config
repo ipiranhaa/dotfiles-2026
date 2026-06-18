@@ -8,15 +8,15 @@ font-size = 13
 # Window Aesthetics
 window-padding-x = 12
 window-padding-y = 12
-window-background-opacity = 0.92
-window-background-blur = true
+background-opacity = 0.92
+background-blur = true
 
 # Theme (Premium Sleek Dark Mode)
-theme = "catppuccin-macchiato"
+theme = "Catppuccin Macchiato"
 
 # Cursor Configuration
 cursor-style = "block"
-cursor-blink = true
+cursor-style-blink = true
 adjust-cursor-thickness = 2
 
 # Clipboard
