@@ -41,9 +41,13 @@ A modular and clean setup to manage your macOS system settings, shell configurat
 ### What `bootstrap.sh` does:
 1. **Creates Symlinks**: Backs up any existing configurations (e.g. `.zshrc`, `.gitconfig`, `.gitignore_global`, `starship.toml`, and ghostty `config`) by renaming them to `*.bak` and creates symlinks pointing to this folder.
 2. **Installs Homebrew**: Installs Homebrew if it is missing.
-3. **Installs Packages**: Runs `brew bundle` to install CLI tools (like Starship) and applications (like Ghostty & FiraCode Nerd Font) listed in the `Brewfile`.
+3. **Installs Packages**: Runs `brew bundle` to install CLI tools (like Starship and `mas`), GUI applications (like Ghostty & FiraCode Nerd Font), and Mac App Store apps (like Magnet) listed in the `Brewfile`.
 4. **Installs Oh My Zsh & Plugins**: Installs Oh My Zsh (if missing) and clones custom plugins (`zsh-autosuggestions` and `zsh-syntax-highlighting`).
 5. **Applies macOS Preferences**: Prompts you to run `macos.sh` which applies typical power-user macOS system settings (Dock preferences, fast key repeat, Finder tweaks, etc.).
+
+### Note on Mac App Store (`mas`) Apps:
+- You must be signed in to the Mac App Store (`App Store.app`) on your system.
+- If installing a paid app (such as Magnet) or downloading it for the first time, macOS will open a secure graphical dialog prompting you to sign in or confirm the download. You must complete this verification on-screen for the script to continue.
 
 ---
 

@@ -12,6 +12,7 @@ brew "fzf"
 brew "tldr"
 brew "tree"
 brew "starship"
+brew "mas"
 
 # Casks (GUI Applications)
 cask "visual-studio-code"
@@ -21,3 +22,6 @@ cask "font-fira-code-nerd-font"
 # cask "docker"
 cask "google-chrome"
 # cask "slack"
+
+# Mac App Store Applications
+mas "Magnet", id: 441258766
