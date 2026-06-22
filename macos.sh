@@ -86,6 +86,13 @@ defaults write com.apple.screencapture type -string "png"
 # defaults write NSGlobalDomain AppleFontSmoothing -int 1
 
 ###############################################################################
+# Menu Bar & Control Center                                                   #
+###############################################################################
+
+# Control Center: Show battery percentage in the menu bar
+defaults -currentHost write com.apple.controlcenter BatteryShowPercentage -bool true
+
+###############################################################################
 # Clean up                                                                    #
 ###############################################################################
 
