@@ -50,3 +50,8 @@ if command -v starship &>/dev/null; then
     eval "$(starship init zsh)"
 fi
 
+# Load fnm (Fast Node Manager)
+if command -v fnm &>/dev/null; then
+    eval "$(fnm env --use-on-cd)"
+fi
+

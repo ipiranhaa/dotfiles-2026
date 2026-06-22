@@ -13,6 +13,7 @@ brew "tldr"
 brew "tree"
 brew "starship"
 brew "mas"
+brew "fnm"
 
 # Casks (GUI Applications)
 cask "visual-studio-code"
@@ -21,6 +22,7 @@ cask "ghostty"
 cask "font-fira-code-nerd-font"
 # cask "docker"
 cask "google-chrome"
+cask "maccy"
 # cask "slack"
 
 # Mac App Store Applications
