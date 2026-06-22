@@ -2,6 +2,8 @@
 # This file will be symlinked to ~/.gitconfig
 
 [user]
+	name = iPiranhaa
+	email = tanatezp@gmail.com
 	# Uncomment and update the lines below with your details:
 	# name = Your Name
 	# email = your.email@example.com

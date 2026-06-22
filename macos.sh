@@ -15,9 +15,12 @@ echo "Configuring macOS preferences..."
 # Keyboard & Input                                                            #
 ###############################################################################
 
-# Keyboard: Set a fast key repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 2
+# Keyboard: Set a blazingly fast keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
+
+# Turn off keyboard illumination when computer is not used for 5 minutes
+defaults write com.apple.BezelServices kDimTime -int 300
 
 # Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
